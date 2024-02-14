@@ -10,7 +10,7 @@ SO THAT I can manage my time effectively
 
 ## Application Image
 
-![alt text](Asset\image.png)
+![alt text](/Asset/image.png)
 
 ## Application URL
 
