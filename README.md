@@ -1,12 +1,12 @@
 # Daily Planner Schedule
 
+## User Story
+
 AS AN employee with a busy schedule
+
 I WANT to add important events to a daily planner
+
 SO THAT I can manage my time effectively
-
-## Description
-
-This Daily scheduling webpage Displays workhour timeblock 
 
 ## Application Image
 
@@ -23,5 +23,7 @@ Application Repository: https://github.com/Ismail-tony/PlannerApp
 Ismail Babalola
 
 ## Credit
+
+
 
 ## License

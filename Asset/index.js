@@ -3,18 +3,27 @@ $(document).ready(function () { //when the document is ready
     // let time = [9, 10, 11, 12, 13, 14, 15, 16, 17]; // times in 24 hours format
     const containerEl = $('.container');
     const currentDayEl = $('#currentDay');
+    const messageEl = $('#message');
 
 
     // Display the current day at the top of the calendar when a user opens the planner.
     const currentDay = dayjs().format('dddd, Do MMM YYYY');
     currentDayEl.text(currentDay);
-    $('.saveBtn').on('click', function () {
+    containerEl.on('click', '.saveBtn', function () {
         const value = $(this).siblings('.description').val();
         const time = $(this).parent().attr('id');
         // SETTING UP LOCAL STORAGE SET ITEMS
-
+    
         localStorage.setItem(time, value);
+        messageEl.text('Appointment Added to local storage ✅').attr('class', 'alert alert-success text-center');
+        $('#message').show();
+        setTimeout(function() {
+            $('#message').hide();
+        }, 5000);
+    
     });
+
+    
 
     // Color-code each timeblock based on past, present, and future when the timeblock is viewed.
     function getColorCode() {
